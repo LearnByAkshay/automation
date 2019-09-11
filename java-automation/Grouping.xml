@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test">
+	
+	<groups>
+		<run>
+			<include name="assert"></include>
+		</run>
+	</groups>
+	
+	<listeners>
+		<listener class-name="customListener.Listener"></listener>
+	</listeners>
+	
+	<parameter name="paramOne" value="Oneeeeeeeee"></parameter>
+	<parameter name="paramTwo" value="Oneeeeeeeee"></parameter>
+	
+	<test name= "Test One">
+  		<classes>
+  				<class name="testCases.loginTestCases.Login"></class>
+  		</classes>
+  	</test>
+	  	
+</suite>

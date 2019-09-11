@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name= "E2E">
+
+	<listeners>
+		<listener class-name="customListener.Listener"></listener>
+	</listeners>
+
+	<suite-files>
+		<suite-file path="C:\Users\Malhar\workspace\java-automation\SmokeTest.xml"/>
+		<suite-file path="C:\Users\Malhar\workspace\java-automation\SanityTest.xml"/>
+	</suite-files>
+</suite>
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Smoke Test]">
+  <parameter name="paramOne" value="Oneeeeeeeee"/>
+  <parameter name="paramTwo" value="Oneeeeeeeee"/>
+  <listeners>
+    <listener class-name="customListener.Listener"/>
+  </listeners>
+  <test name="Test One(failed)">
+    <groups>
+      <run>
+        <include name="assert"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.loginTestCases.Login">
+        <methods>
+          <include name="hardAssert"/>
+        </methods>
+      </class> <!-- testCases.loginTestCases.Login -->
+    </classes>
+  </test> <!-- Test One(failed) -->
+</suite> <!-- Failed suite [Smoke Test] -->
